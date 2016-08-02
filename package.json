@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "dependencies": {
+    "harmonic-theme-conf-boilerplate": "0.0.2",
+    "harmonic-theme-default": "latest"
+  }
+}

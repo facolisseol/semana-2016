@@ -1,0 +1,25 @@
+{
+    "name": "Facol",
+    "title": "Semana da Informática - 2016",
+    "domain": "http://awesome.com",
+    "subtitle": "OHC",
+    "author": "Emerson Mellado",
+    "description": "Essa semana vai ser legal, entre 15 e 19 de Agosto",
+    "bio": "Apaixonado por café e tecnologia :)",
+    "theme": "harmonic-theme-conf-boilerplate",
+    "preprocessor": "sass",
+    "posts_permalink": ":language/:year/:month/:title",
+    "pages_permalink": ":language/pages/:title",
+    "header_tokens": [
+        "<!--",
+        "-->"
+    ],
+    "index_posts": 10,
+    "i18n": {
+        "default": "en",
+        "languages": [
+            "en",
+            "pt-br"
+        ]
+    }
+}
