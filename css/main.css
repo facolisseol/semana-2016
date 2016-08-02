@@ -716,7 +716,7 @@ nav {
    HEADER
    ========================================================================== */
 .header {
-  background-image: url('../images/cover.jpg');
+  background-image: url('https://facolisseol.github.io/semana-2016/images/cover.jpg');
   background-color: #092940;
   background-repeat: no-repeat;
   background-position: center bottom;
