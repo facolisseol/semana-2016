@@ -22,7 +22,7 @@
 
         conf.map.geocoder = new google.maps.Geocoder();
 
-        conf.map.latlng = new google.maps.LatLng(0, 0);
+        conf.map.latlng = new google.maps.LatLng(-22.6183492,-48.8215084);
 
         conf.map.options = {
             zoom: 16,
@@ -42,12 +42,16 @@
     conf.map.createMarker = function () {
         
         conf.map.address = conf.map.element.attr('data-address');
+        conf.map.latlong = conf.map.element.attr('data-latlong');
+
+        console.log("conf.map.latlong", conf.map.latlong);
 
         conf.map.geocoder.geocode({ 'address': conf.map.address}, function (results, status) {
 
             if (status === google.maps.GeocoderStatus.OK) {
-
-                conf.map.canvas.setCenter(results[0].geometry.location);
+                console.log("results[0].geometry.location", results[0].geometry.location);
+                //conf.map.canvas.setCenter(results[0].geometry.location);
+                //conf.map.canvas.setCenter(new google.maps.LatLng(conf.map.latlong));
 
                 new google.maps.Marker({
                     map: conf.map.canvas,
